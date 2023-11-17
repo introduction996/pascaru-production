@@ -11,6 +11,7 @@
 html, body {
     height: 100%;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 nav {
@@ -37,9 +38,14 @@ a {
 }
 
 #logo {
-    background-image: url("./assets/logo.png");
-    width: max-content;
+    display: flex;
+    justify-content: center;
     flex: 1;
+}
+
+#logo>img {
+    aspect-ratio: 1/1;
+    height: 4rem;
 }
 
 h2 {
@@ -48,13 +54,11 @@ h2 {
     font-family: var(--font-bebas);
 }
 
-p {
-    font-size: 28px;
-    color: rgb(255, 255, 255);
-    opacity: 80%;
-}
 
 .main {
     background-image: url("./assets/photo1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
     background-color: #000;
 }
