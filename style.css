@@ -167,7 +167,7 @@ a {
 }
 
 .about-image {
-    width: 20rem;
+    width: 25rem;
     aspect-ratio: 16/9;
     background-size: cover;
     background-position: 50% 50%;
@@ -183,3 +183,64 @@ a {
 }
 
 /* services */
+.services {
+    background-color: black;
+    width: 100%;
+
+    padding-bottom: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.services > div >  h1 {
+    font-family: var(--font-bebas);
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 2.5rem;
+}
+
+.services-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10rem
+}
+
+.services-images > div > h3 {
+    font-family: var(--font-roboto);
+    color: white;
+}
+
+.services-images > div > .img {
+    width: 20rem;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 0.5rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.services-images > div:nth-child(1) > .img {
+    background-image: url('./assets/photo5.jpeg');
+}
+
+.services-images > div:nth-child(2) > .img {
+    background-image: url('./assets/photo4.jpg');
+}
+
+.services-images > div:nth-child(3) > .img {
+    background-image: url('./assets/photo6.jpeg');
+}
+
+.services-images > div:nth-child(4) > .img {
+    background-image: url('./assets/photo7.jpeg');
+}
+
+.services-images > div:nth-child(5) > .img {
+    background-image: url('./assets/photo8.jpeg');
+}
