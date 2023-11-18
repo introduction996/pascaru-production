@@ -69,11 +69,17 @@ a {
 .hero-content {
     margin-left: 10rem;
     z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
 }
 
 .hero-content>h1 {
     font-family: var(--font-bebas);
     font-size: 7rem;
+    height: 7rem;
     color: white;
 }
 
@@ -82,6 +88,24 @@ a {
     font-size: 1.5rem;
     line-height: 1.7rem;
     color: white;
+}
+
+.hero-links {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.hero-links > a > svg {
+    height: 2rem;
+    aspect-ratio: 1/1;
+    fill: white;
+    transition: fill;
+    transition-duration: 0.3s;
+}
+
+.hero-links > a > svg:hover {
+    fill: rgb(156, 156, 156);
 }
 
 .gradient {
