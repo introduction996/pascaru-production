@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+:root {
+    font-size: 25px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +18,10 @@ html, body {
     height: 100%;
     width: 100vw;
     overflow-x: hidden;
+}
+
+body {
+    background-color: black;
 }
 
 /* nav */
@@ -81,7 +89,7 @@ nav > ul > li > a:hover::after {
     background-image: url("./assets/photo1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 93vh;
+    height: 94vh;
     background-color: black;
 
     position: relative;
@@ -219,14 +227,20 @@ nav > ul > li > a:hover::after {
     align-items: center;
 }
 
-.services > div >  h1 {
+.services-title {
+    text-align: center;
+}
+
+.services-title >  h1 {
     font-family: var(--font-bebas);
     font-size: 4rem;
     color: white;
     margin-bottom: 2.5rem;
 }
 
+
 .services-images {
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,0 +1,116 @@
+@media screen and (max-width: 4000px) {
+    :root {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    :root {
+        font-size: 15.5px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    :root {
+        font-size: 14.5px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .hero-content {
+        margin-left: 5rem;
+    }
+
+    .main {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    :root {
+        font-size: 13.5px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .main {
+        height: 50vh;
+    }
+
+    .hero-content > h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    :root {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    :root {
+        font-size: 9px;
+    }
+
+    .main {
+        height: 30vh;
+    }
+
+    .hero-content > h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .services {
+        overflow-x: scroll;
+    }
+
+    .services-images {
+        width: max-content;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+}
