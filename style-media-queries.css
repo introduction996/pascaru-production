@@ -113,4 +113,19 @@
         flex-wrap: nowrap;
         gap: 1rem;
     }
+
+    .nav > ul {
+        flex: 1.5;
+        justify-content: space-evenly;
+    }
+
+    #logo {
+        flex: 0.5;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        font-size: 8px;
+    }
 }
