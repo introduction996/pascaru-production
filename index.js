@@ -10,3 +10,8 @@ const linkFB = document.querySelector('#link-facebook');
 linkLI.innerHTML = svgLI;
 linkIS.innerHTML = svgIS;
 linkFB.innerHTML = svgFB;
+
+function scrollToTop() {
+    window.scrollTo(0, 0);
+    console.log('call')
+}

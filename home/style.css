@@ -12,15 +12,19 @@
     --font-bebas: 'Bebas Neue', sans-serif;
 
     user-select: none;
+    scroll-behavior:smooth;
 }
 
-html, body {
+html {
     height: 100%;
     width: 100vw;
     overflow-x: hidden;
 }
 
 body {
+    height: 100%;
+    width: 100vw;
+
     background-color: black;
 }
 
@@ -33,6 +37,8 @@ nav {
     font-size: 1.2rem;
 
     background-color: black;
+    position:fixed;
+    z-index: 2;
 }
 
 nav>ul {
@@ -91,7 +97,8 @@ nav > ul > li > a:hover::after {
     background-image: url("../assets/photo1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 94vh;
+    top: 4rem;
+    height: 95vh;
     background-color: black;
 
     position: relative;
