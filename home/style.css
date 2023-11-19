@@ -90,6 +90,11 @@ nav > ul > li > a:hover::after {
 #logo>img {
     aspect-ratio: 16/9;
     height: 4rem;
+    font-family: var(--font-roboto);
+}
+
+#logo>img:hover {
+    cursor: pointer;
 }
 
 /* hero */
