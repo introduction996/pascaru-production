@@ -103,11 +103,12 @@ nav > ul > li > a:hover::after {
     background-image: url("../assets/photo1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    top: 4rem;
     height: 95vh;
     background-color: black;
 
     position: relative;
+    top: 4rem;
+    margin-bottom: 4rem;
 
     display: flex;
     flex-direction: column;
