@@ -247,6 +247,7 @@ nav > ul > li > a:hover::after {
 /* locations */
 .locations {
     width: 100%;
+    position: relative;
 }
 
 .locations-title {
@@ -318,7 +319,7 @@ nav > ul > li > a:hover::after {
 }
 
 .location.one > .location-media > .media-photo:nth-child(3) {
-    background-image: url('../assets/films_assets/photo-F-2.jpeg');
+    background-image: url('../assets/films_assets/photo-F-2.png');
 }
 
 .location.one > .location-media > .media-photo:nth-child(4) {
@@ -327,33 +328,47 @@ nav > ul > li > a:hover::after {
 
 /* photos2 */
 .location.two > .location-media > .media-photo:nth-child(2) {
-    background-image: url('../assets/films_assets/photo-F-4.jpeg');
+    background-image: url('../assets/films_assets/photo-F-4.png');
 }
 
 .location.two > .location-media > .media-photo:nth-child(3) {
-    background-image: url('../assets/films_assets/photo-F-5.jpeg');
+    background-image: url('../assets/films_assets/photo-F-5.png');
 }
 
 .location.two > .location-media > .media-photo:nth-child(4) {
-    background-image: url('../assets/films_assets/photo-F-6.jpeg');
+    background-image: url('../assets/films_assets/photo-F-6.png');
 }
 
 /* photos3 */
 .location.three > .location-media > .media-photo:nth-child(2) {
-    background-image: url('../assets/films_assets/photo-F-7.jpeg');
+    background-image: url('../assets/films_assets/photo-F-7.png');
 }
 
 .location.three > .location-media > .media-photo:nth-child(3) {
-    background-image: url('../assets/films_assets/photo-F-8.jpg');
+    background-image: url('../assets/films_assets/photo-F-8.png');
 }
 
 .location.three > .location-media > .media-photo:nth-child(4) {
-    background-image: url('../assets/films_assets/photo-F-9.jpeg');
+    background-image: url('../assets/films_assets/photo-F-9.png');
 }
 
 .media-video > iframe {
     border-radius: 0.5rem;
     width: 13rem;
+    aspect-ratio: 16/9;
+}
+
+#modal-photo-showcase {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#modal-photo-showcase > img {
+    width: 30rem;
     aspect-ratio: 16/9;
 }
 
