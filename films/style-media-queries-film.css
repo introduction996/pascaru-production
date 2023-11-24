@@ -88,6 +88,15 @@
         flex-wrap: nowrap;
         gap: 1rem;
     }
+
+    .location-media {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .media-photo, .media-video > iframe {
+        width: 20rem;
+    }
 }
 
 @media screen and (max-width: 690px) {

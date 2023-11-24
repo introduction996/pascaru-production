@@ -22,7 +22,11 @@ mediaPhotos.forEach(photo => {
         imgDiv.style.backgroundImage = `url('../assets/films_assets/photo-F-${photo.dataset.order}.png')`;
         modalInnerContainer.innerHTML = '';
         modalInnerContainer.appendChild(imgDiv);
-        imgDiv.tabIndex = 0;
-        imgDiv.focus({ preventScroll: false })
+        modal.blur();
+        if (parseInt(photo.dataset.order) <= 3) {
+            modalInnerContainer.style.top = "0";
+        } else if (parseInt(photo.dataset.order) > 3 && parseInt(photo.dataset.order) <=6) {
+            modalInnerContainer.style.top = "33%";
+        } else {modalInnerContainer.style.top = "66%"}
     })
 })

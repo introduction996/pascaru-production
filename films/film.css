@@ -372,12 +372,15 @@ nav > ul > li > a:hover::after {
 }
 
 #modal-photo-showcase:focus {
+    outline: 0;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 #modal-container {
+    position: absolute;
+
     width: 100%;
-    height: 100%;
+    height: 33.3%;
     display: flex;
     justify-content: center;
     align-items: center;
