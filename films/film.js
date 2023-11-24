@@ -12,12 +12,17 @@ vidoeFrameThree.innerHTML = gorgeVideo;
 
 //location showcase photo gallery control
 const modal = document.querySelector('#modal-photo-showcase');
+const modalInnerContainer = document.querySelector('#modal-container');
 const mediaPhotos = document.querySelectorAll('.media-photo');
+const imgDiv = document.createElement('div');
+imgDiv.setAttribute('id', 'img');
 mediaPhotos.forEach(photo => {
     photo.addEventListener('click', () => {
-        let img = `<img src="../assets/films-assets/photo-F-${photo.dataset.order}.png" alt=""></img>`;
-        modal.innerHTML = '';
-        modal.innerHTML += img;
-        modal.show()
+        modal.show();
+        imgDiv.style.backgroundImage = `url('../assets/films_assets/photo-F-${photo.dataset.order}.png')`;
+        modalInnerContainer.innerHTML = '';
+        modalInnerContainer.appendChild(imgDiv);
+        imgDiv.tabIndex = 0;
+        imgDiv.focus({ preventScroll: false })
     })
 })
