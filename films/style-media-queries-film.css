@@ -119,6 +119,7 @@
 
     #logo {
         flex: 0.5;
+        padding-left: 5rem;
     }
 }
 

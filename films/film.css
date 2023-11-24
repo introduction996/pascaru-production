@@ -110,6 +110,7 @@ nav > ul > li > a:hover::after {
     background-size: cover;
     height: 95vh;
     background-color: black;
+    width: 100vw;
 
     position: relative;
     top: 4rem;
@@ -268,7 +269,8 @@ nav > ul > li > a:hover::after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .location {
@@ -389,13 +391,13 @@ nav > ul > li > a:hover::after {
 
 #modal-container > div:nth-child(1) {
     position: absolute;
-    width: 50rem;
-    height: 30rem;
+    width: 45rem;
+    height: 27rem;
     text-align: end;
 }
 
 #modal-container > #img {
-    width: 45rem;
+    width: 40rem;
     aspect-ratio: 16/9;
     border-radius: 1rem;
     background-repeat: no-repeat;
@@ -433,8 +435,8 @@ nav > ul > li > a:hover::after {
 }
 
 .arrows > div {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
 #arrowR, #arrowL{
