@@ -367,7 +367,7 @@ nav > ul > li > a:hover::after {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100%;
+    height: 34%;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -380,10 +380,16 @@ nav > ul > li > a:hover::after {
     position: absolute;
 
     width: 100%;
-    height: 33.3%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#modal-container > div:nth-child(1) {
+    width: 50rem;
+    text-align: end;
 }
 
 #modal-container > #img {
@@ -392,6 +398,26 @@ nav > ul > li > a:hover::after {
     border-radius: 1rem;
     background-repeat: no-repeat;
     background-size: cover;
+
+    position: relative;
+}
+
+.close {
+    width: fit-content;
+    margin-left: auto;
+}
+
+.close > svg{
+    width: 3rem;
+    aspect-ratio: 1/1;
+    fill: white;
+    transition: fill;
+    transition-duration: 200ms;
+}
+
+.close > svg:hover{
+    fill: rgb(160, 160, 160);
+    cursor: pointer;
 }
 
 .copyright {
