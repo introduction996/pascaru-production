@@ -366,7 +366,6 @@ nav > ul > li > a:hover::after {
 
 #modal-photo-showcase {
     position: absolute;
-    top: 0;
     left: 0;
     width: 100vw;
     height: 34%;
