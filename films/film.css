@@ -403,7 +403,8 @@ nav > ul > li > a:hover::after {
     background-repeat: no-repeat;
     background-size: cover;
 
-    position: relative;
+    /* position: relative; */
+    transition: background-image 200ms;
 }
 
 .close {
