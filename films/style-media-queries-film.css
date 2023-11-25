@@ -109,6 +109,10 @@
     :root {
         font-size: 10px;
     }
+
+    .location-description {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 556px) {
@@ -136,7 +140,7 @@
         font-size: 3rem;
     }
 
-    .hero-content {
+    .hero-content > p{
         overflow-y: scroll;
     }
 }

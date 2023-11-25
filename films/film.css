@@ -370,7 +370,7 @@ nav > ul > li > a:hover::after {
     position: absolute;
     top: var(--top-value);
     width: 100vw;
-    height: auto;
+    height: 33.3%;
     background-color: rgba(0, 0, 0, 0.2);
 }
 

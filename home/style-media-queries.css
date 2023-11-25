@@ -84,6 +84,10 @@
     :root {
         font-size: 10px;
     }
+
+    .about-text > p {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 556px) {
