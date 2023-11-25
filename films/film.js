@@ -16,20 +16,23 @@ const modalInnerContainer = document.querySelector('#modal-container');
 const mediaPhotos = document.querySelectorAll('.media-photo');
 const imgDiv = document.createElement('div');
 imgDiv.setAttribute('id', 'img');
+
+let index = 0;
 mediaPhotos.forEach(photo => {
     photo.addEventListener('click', () => {
-        modal.show();
         imgDiv.style.backgroundImage = `url('../assets/films_assets/photo-F-${photo.dataset.order}.png')`;
         if (modalInnerContainer.firstChild !== modalInnerContainer.lastChild) {
             modalInnerContainer.removeChild(modalInnerContainer.lastChild);
         }
         modalInnerContainer.appendChild(imgDiv);
-        modal.blur();
         if (parseInt(photo.dataset.order) <= 3) {
-            modal.style.top = "0";
+            modal.style.setProperty('--top-value', '0%');
         } else if (parseInt(photo.dataset.order) > 3 && parseInt(photo.dataset.order) <=6) {
-            modal.style.top = "34%";
-        } else {modal.style.top = "66%"}
+            modal.style.setProperty('--top-value', '34%');
+        } else {modal.style.setProperty('--top-value', '66%');}
+
+        modal.show();
+        index = photo.dataset.order;
     })
 })
 
@@ -43,5 +46,16 @@ const arrowL = document.querySelector('#arrowL');
 const arrowR = document.querySelector('#arrowR');
 arrowL.innerHTML = '<svg viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z" fill=""></path> </g></svg>';
 arrowR.innerHTML = '<svg viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z" fill=""></path> </g></svg>';
-
-
+arrowR.addEventListener('click', () => {
+    const image = document.querySelector('#img');
+    image.style.backgroundImage = `url('../assets/films_assets/photo-F-${index++}.png')`;
+    if (index <= 3) {
+        // if ((index+1) > 3) {
+        //     index = 1
+        //     image.style.backgroundImage = `url('../assets/films_assets/photo-F-${index}.png')`;
+        // } else {
+        //     index += 1
+        //     image.style.backgroundImage = `url('../assets/films_assets/photo-F-${index}.png')`;
+        // }
+    }
+})
