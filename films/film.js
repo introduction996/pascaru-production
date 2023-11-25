@@ -28,7 +28,7 @@ mediaPhotos.forEach(photo => {
         if (parseInt(photo.dataset.order) <= 3) {
             modal.style.setProperty('--top-value', '0%');
         } else if (parseInt(photo.dataset.order) > 3 && parseInt(photo.dataset.order) <=6) {
-            modal.style.setProperty('--top-value', '34%');
+            modal.style.setProperty('--top-value', '33%');
         } else {modal.style.setProperty('--top-value', '66%');}
 
         modal.show();
@@ -109,5 +109,13 @@ arrowL.addEventListener('click', () => {
             index -= 1;
             image.style.backgroundImage = `url('../assets/films_assets/photo-F-${index}.png')`;
         }
+    }
+})
+
+document.addEventListener('click', (e) => {
+    const image = document.querySelector('#img');
+    // check if not clicking any elements related to the photo gallery, if not - close the gallery
+    if (e.target != image && !(e.target.classList.contains('media-photo') || e.target.nodeName == 'path' || e.target.nodeName == 'svg' || e.target.classList.contains('arrows') || e.target.classList.contains('wrapper'))) {
+        modal.close()
     }
 })
