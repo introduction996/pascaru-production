@@ -14,5 +14,4 @@ linkFB.innerHTML = svgFB;
 // scroll to the top of the page function
 function scrollToTop() {
     window.scrollTo(0, 0);
-    console.log('call')
 }
