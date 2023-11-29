@@ -137,6 +137,7 @@ nav > ul > li > a:hover::after {
 
 .hero-content>h1 {
     font-family: var(--font-bebas);
+    font-weight: 100;
     font-size: 7rem;
     height: 6rem;
     color: white;
@@ -190,6 +191,7 @@ nav > ul > li > a:hover::after {
 
 .genre-showcase > .container > .img > .img-text {
     font-family: var(--font-bebas);
+    font-weight: 100;
     font-size: 2rem;
     color: white;
     width: 100%;
@@ -257,6 +259,7 @@ nav > ul > li > a:hover::after {
 .locations-title {
     width: 100%;
     font-family: var(--font-bebas);
+    font-weight: 100;
     font-size: 4rem;
     color: white;
     text-align: center;
@@ -287,6 +290,7 @@ nav > ul > li > a:hover::after {
 
 .location-title {
     font-family: var(--font-bebas);
+    font-weight: 100;
     font-size: 3rem;
     color: white;
 }
