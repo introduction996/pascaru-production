@@ -107,6 +107,7 @@ nav > ul > li > a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 /* sdfsdf */
@@ -119,10 +120,11 @@ nav > ul > li > a:hover::after {
 /* sdfsdf */
 
 .contact-info {
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 3rem
+    gap: 3rem;
 }
 
 .contact-info > .container {
@@ -145,23 +147,62 @@ nav > ul > li > a:hover::after {
 }
 
 .title > span, .title + span {
-    color: rgb(120, 120, 120);
+    color: grey;
     font-weight: 600;
     font-family: var(--font-roboto);
     font-size: 2rem;
+
+    user-select: text;
 }
 
 span > a {
     text-decoration: none;
-    color: rgb(120, 120, 120);
-    background-color: rgb(20, 20, 20);
+    color: grey;
+    background-color: rgb(32, 32, 32);
     border-radius: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+
+    transition: color 100ms ease-in-out;
+}
+
+span > a:hover {
+    color: white;
 }
 
 .phone {
     line-height: 3rem;
+}
+
+.contact-button {
+    width: 12rem;
+    aspect-ratio: 32/9;
+    font-size: 1.3rem;
+    color: rgb(140, 140, 140);
+    background-color: rgb(32, 32, 32);
+    border-radius: 0.5rem;
+
+    transition: color 100ms ease-in-out, background-color 100ms ease-in-out;
+}
+
+.contact-button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.contact-button:active {
+    background-color: rgb(50, 50, 50);
+}
+
+.map {
+    width: fit-content;
+    height: fit-content;
+}
+
+.map > iframe {
+    border-radius: 1rem;
+    width: 45rem;
+    aspect-ratio: 1/1;
 }
 
 .copyright {
