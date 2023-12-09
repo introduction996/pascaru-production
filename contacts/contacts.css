@@ -112,15 +112,6 @@ nav > ul > li > a:hover::after {
     overflow-x: hidden;
 }
 
-/* sdfsdf */
-.contact-info {
-    background-color: green;
-}
-.map {
-    background-color: red;
-}
-/* sdfsdf */
-
 .contact-info {
     width: 25%;
     display: flex;
@@ -218,7 +209,7 @@ span > a:hover {
     justify-content: center;
 
     position: relative;
-    bottom: 0vh;
+    top: 15vh;
 }
 
 .copyright > p {
