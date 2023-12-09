@@ -13,6 +13,7 @@
 
     user-select: none;
     scroll-behavior:smooth;
+    /* box-sizing: border-box; */
 }
 
 html {
@@ -100,14 +101,15 @@ nav > ul > li > a:hover::after {
 
 .contact-content {
     width: 100%;
-    height: calc(100vh - 8rem);
-    position: relative;
-    top: 4rem;
+    height: max-content;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    overflow-x: hidden;
 }
 
 /* sdfsdf */
@@ -201,8 +203,8 @@ span > a:hover {
 
 .map > iframe {
     border-radius: 1rem;
-    width: 45rem;
-    aspect-ratio: 1/1;
+    width: 35rem;
+    height: 35rem;
 }
 
 .copyright {
@@ -215,8 +217,8 @@ span > a:hover {
     align-items: center;
     justify-content: center;
 
-    position: absolute;
-    top: calc(100vh - 4.1rem);
+    position: relative;
+    bottom: 0vh;
 }
 
 .copyright > p {
