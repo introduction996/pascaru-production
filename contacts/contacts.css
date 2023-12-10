@@ -110,6 +110,7 @@ nav > ul > li > a:hover::after {
     align-items: center;
     gap: 2rem;
     overflow-x: hidden;
+    position: relative;
 }
 
 .contact-info {
@@ -218,4 +219,77 @@ span > a:hover {
     color: white;
     opacity: 50%;
     text-align: center;
+}
+
+/* modal/form styles */
+dialog#contact-modal {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 4rem);
+    top: 4rem;
+
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+form#contact-form {
+    width: 40%;
+    height: max-content;
+    background-color: rgba(30, 30, 30, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem;
+    border-radius: 1rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+form#contact-form > div, form#contact-form > div > input, form#contact-form > div > textarea{
+    width: 100%;
+    height: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: var(--font-roboto);
+}
+
+form#contact-form > div > input:focus, form#contact-form > div > textarea:focus {
+    outline: 3px solid rgb(103, 124, 146);
+}
+
+form#contact-form > div:nth-child(4) {
+    height: auto;
+}
+
+form#contact-form > div > textarea {
+    max-width: 100%;
+    min-width: 50%;
+    max-height: 10rem;
+    min-height: 2rem;
+    font-size: 1rem;
+}
+
+form#contact-form > button {
+    width: 12rem;
+    aspect-ratio: 32/9;
+    font-size: 1.3rem;
+    color: rgb(140, 140, 140);
+    background-color: rgb(32, 32, 32);
+    border-radius: 0.5rem;
+
+    transition: color 100ms ease-in-out, background-color 100ms ease-in-out;
+}
+
+form#contact-form > button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(40, 40, 40);
+}
+
+form#contact-form > button:active {
+    background-color: rgb(50, 50, 50);
 }
