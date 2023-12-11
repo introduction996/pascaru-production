@@ -114,6 +114,14 @@
     :root {
         font-size: 11px;
     }
+
+    form#contact-form {
+        width: 80%;
+    }
+
+    form#contact-form > div > textarea {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
