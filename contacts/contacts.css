@@ -247,6 +247,8 @@ form#contact-form {
     border-radius: 1rem;
     overflow-x: hidden;
     overflow-y: scroll;
+    position: relative;
+    z-index: 2;
 }
 
 form#contact-form > div, form#contact-form > div > input, form#contact-form > div > textarea{
@@ -268,7 +270,7 @@ form#contact-form > div:nth-child(4) {
 form#contact-form > div > textarea {
     max-width: 100%;
     min-width: 50%;
-    max-height: 10rem;
+    max-height: 6rem;
     min-height: 2rem;
     font-size: 1rem;
 }
@@ -292,4 +294,28 @@ form#contact-form > button:hover {
 
 form#contact-form > button:active {
     background-color: rgb(50, 50, 50);
+}
+
+form#contact-form > div.close {
+    overflow: hidden;
+    padding: 0;
+    width: min-content;
+    height: min-content;
+    position: absolute;
+    top: 1%;
+    left: 95%;
+}
+
+.close > svg{
+    width: 2rem;
+    aspect-ratio: 1/1;
+    fill: white;
+    transition: fill;
+    transition-duration: 200ms;
+    margin-left: auto;
+}
+
+.close > svg:hover{
+    fill: rgb(160, 160, 160);
+    cursor: pointer;
 }

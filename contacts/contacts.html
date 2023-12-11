@@ -9,6 +9,7 @@
     <script src="../index.js" defer></script>
     <script src="./contacts.js" defer></script>
     <script src="./mail_handling.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <title>Contacts</title>
 </head>
 <body>
@@ -46,7 +47,7 @@
 
 
         <dialog id="contact-modal">
-            <form id="contact-form">
+            <form id="contact-form" onsubmit="sendEmail(); reset(); return false">
                 <div>
                     <input type="text" id="name" placeholder="Name" required>
                 </div>
@@ -60,6 +61,7 @@
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Question" required></textarea>
                 </div>
                 <button type="submit">Send</button>
+                <div class="close"></div>
             </form>
         </dialog>
     </div>
