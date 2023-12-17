@@ -15,3 +15,7 @@ linkFB.innerHTML = svgFB;
 function scrollToTop() {
     window.scrollTo(0, 0);
 }
+
+function bringHome() {
+    window.location.assign("../home/index.html");
+}
