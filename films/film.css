@@ -167,9 +167,8 @@ nav > ul > li > a:hover::after {
     justify-content: center;
     align-items: center;
 
-    padding-top: 5rem;
-    padding-bottom: 1rem;
-    margin-bottom: 5rem;
+    padding-top: 12rem;
+    padding-bottom: 10rem;
 }
 
 .genre-showcase {
@@ -405,6 +404,7 @@ nav > ul > li > a:hover::after {
     width: 40rem;
     aspect-ratio: 16/9;
     border-radius: 1rem;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
