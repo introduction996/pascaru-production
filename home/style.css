@@ -143,13 +143,13 @@ nav > ul > li > a:hover::after {
 
 .hero-links {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     align-items: center;
 }
 
 .hero-links > a > svg {
     height: 2rem;
-    aspect-ratio: 1/1;
+    width: 2rem;
     fill: white;
     transition: fill;
     transition-duration: 0.3s;
